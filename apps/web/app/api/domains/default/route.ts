@@ -1,7 +1,7 @@
 import { withWorkspace } from "@/lib/auth";
 import { prisma } from "@/lib/prisma";
 import z from "@/lib/zod";
-import { DUB_DOMAINS_ARRAY } from "@dub/utils";
+import { DUB_DOMAINS_ARRAY } from "@/lib/dub/utils"; // Fixed import path
 import { NextResponse } from "next/server";
 
 // GET /api/domains/default - get default domains
@@ -12,12 +12,7 @@ export const GET = withWorkspace(
         projectId: workspace.id,
       },
       select: {
-        dubsh: true,
-        chatgpt: true,
-        sptifi: true,
-        gitnew: true,
-        amznid: true,
-        loooooooong: true,
+        ltdhuntco: true,
       },
     });
 
