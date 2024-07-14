@@ -1,7 +1,7 @@
 export const APP_NAME = process.env.NEXT_PUBLIC_APP_NAME || "Dub.co";
 
 export const SHORT_DOMAIN =
-  process.env.NEXT_PUBLIC_APP_SHORT_DOMAIN || "dub.sh";
+  process.env.NEXT_PUBLIC_APP_SHORT_DOMAIN || "ltdhunt.co";
 
 export const HOME_DOMAIN = `https://${process.env.NEXT_PUBLIC_APP_DOMAIN}`;
 

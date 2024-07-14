@@ -9,7 +9,7 @@ async function main() {
     },
     where: {
       domain: {
-        in: ["dub.sh", "chatg.pt", "spti.fi", "amzn.id"],
+        in: ["ltdhunt.co", "chatg.pt", "spti.fi", "amzn.id"],
       },
     },
     orderBy: {

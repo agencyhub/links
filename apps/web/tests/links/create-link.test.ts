@@ -20,7 +20,7 @@ describe.sequential("POST /links", async () => {
       path: "/links",
       body: {
         url,
-        domain: "dub.sh",
+        domain: "ltdhunt.co",
         publicStats: true,
       },
       headers: {

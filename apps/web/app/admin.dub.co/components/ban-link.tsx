@@ -35,7 +35,7 @@ const Form = () => {
   return (
     <div className="relative flex w-full rounded-md shadow-sm">
       <span className="inline-flex items-center rounded-l-md border border-r-0 border-gray-300 bg-gray-50 px-5 text-gray-500 sm:text-sm">
-        dub.sh
+        ltdhunt.co
       </span>
       <input
         name="key"
@@ -52,15 +52,15 @@ const Form = () => {
         aria-invalid="true"
         onPaste={(e: React.ClipboardEvent<HTMLInputElement>) => {
           e.preventDefault();
-          // if pasting in https://dub.sh/xxx or dub.sh/xxx, extract xxx
+          // if pasting in https://ltdhunt.co/xxx or ltdhunt.co/xxx, extract xxx
           const text = e.clipboardData.getData("text/plain");
           if (
-            text.startsWith("https://dub.sh/") ||
-            text.startsWith("dub.sh/")
+            text.startsWith("https://ltdhunt.co/") ||
+            text.startsWith("ltdhunt.co/")
           ) {
             e.currentTarget.value = text
-              .replace("https://dub.sh/", "")
-              .replace("dub.sh/", "");
+              .replace("https://ltdhunt.co/", "")
+              .replace("ltdhunt.co/", "");
           } else {
             e.currentTarget.value = text;
           }

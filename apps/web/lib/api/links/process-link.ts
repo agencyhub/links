@@ -144,8 +144,8 @@ export async function processLink<T extends Record<string, any>>({
     domain = domains?.find((d) => d.primary)?.slug || SHORT_DOMAIN;
   }
 
-  // checks for dub.sh links
-  if (domain === "dub.sh") {
+  // checks for ltdhunt.co links
+  if (domain === "ltdhunt.co") {
     // check if user exists (if userId is passed)
     if (userId) {
       const userExists = await checkIfUserExists(userId);

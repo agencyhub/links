@@ -17,7 +17,7 @@ import Footer from "./components/footer";
 
 export default function DomainTransferred({
   email = "panic@thedis.co",
-  domain = "dub.sh",
+  domain = "ltdhunt.co",
   newWorkspace = { name: "Dub", slug: "dub" },
   linksCount = 50,
 }: {

@@ -97,7 +97,7 @@ module.exports = {
         has: [
           {
             type: "host",
-            value: "app.dub.sh",
+            value: "app.ltdhunt.co",
           },
         ],
         destination: "https://app.dub.co",
@@ -109,7 +109,7 @@ module.exports = {
         has: [
           {
             type: "host",
-            value: "app.dub.sh",
+            value: "app.ltdhunt.co",
           },
         ],
         destination: "https://app.dub.co/:path*",
@@ -123,7 +123,7 @@ module.exports = {
             has: [
               {
                 type: "host",
-                value: "dub.sh",
+                value: "ltdhunt.co",
               },
             ],
             destination: `https://dub.co/${segment}`,
@@ -135,7 +135,7 @@ module.exports = {
             has: [
               {
                 type: "host",
-                value: "dub.sh",
+                value: "ltdhunt.co",
               },
             ],
             destination: `https://dub.co/${segment}/:path*`,
@@ -149,7 +149,7 @@ module.exports = {
         has: [
           {
             type: "host",
-            value: "dub.sh",
+            value: "ltdhunt.co",
           },
         ],
         destination: "https://dub.co/tools/metatags",
@@ -173,7 +173,7 @@ module.exports = {
         has: [
           {
             type: "host",
-            value: "staging.dub.sh",
+            value: "staging.ltdhunt.co",
           },
         ],
         destination: "https://dub.co",
@@ -185,7 +185,7 @@ module.exports = {
         has: [
           {
             type: "host",
-            value: "preview.dub.sh",
+            value: "preview.ltdhunt.co",
           },
         ],
         destination: "https://preview.dub.co",
@@ -197,7 +197,7 @@ module.exports = {
         has: [
           {
             type: "host",
-            value: "admin.dub.sh",
+            value: "admin.ltdhunt.co",
           },
         ],
         destination: "https://admin.dub.co",

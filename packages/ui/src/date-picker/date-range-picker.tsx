@@ -75,7 +75,7 @@ const DateRangePickerInner = ({
     selectedRange,
     selectedDay,
   ) => {
-    // We can hopefully simplify this in the future (see https://dub.sh/ueboa6U)
+    // We can hopefully simplify this in the future (see https://ltdhunt.co/ueboa6U)
     const newRange =
       range?.from && range?.to ? { from: selectedDay } : selectedRange;
 

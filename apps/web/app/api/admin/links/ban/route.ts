@@ -9,7 +9,7 @@ import {
 } from "@dub/utils";
 import { NextResponse } from "next/server";
 
-// DELETE /api/admin/links/ban – ban a dub.sh link by key
+// DELETE /api/admin/links/ban – ban a ltdhunt.co link by key
 export const DELETE = withAdmin(async ({ searchParams }) => {
   const { key } = searchParams as { linkId?: string; key?: string };
 
@@ -18,7 +18,7 @@ export const DELETE = withAdmin(async ({ searchParams }) => {
   }
 
   const link = await prisma.link.findUnique({
-    where: { domain_key: { domain: "dub.sh", key } },
+    where: { domain_key: { domain: "ltdhunt.co", key } },
   });
 
   if (!link) {

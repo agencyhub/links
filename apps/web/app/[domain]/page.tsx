@@ -30,7 +30,7 @@ export async function generateStaticParams() {
     where: {
       verified: true,
       NOT: {
-        slug: "dub.sh",
+        slug: "ltdhunt.co",
       },
       links: {
         some: {

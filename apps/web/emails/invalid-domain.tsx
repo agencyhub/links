@@ -16,7 +16,7 @@ import Footer from "./components/footer";
 
 export default function InvalidDomain({
   email = "panic@thedis.co",
-  domain = "dub.sh",
+  domain = "ltdhunt.co",
   workspaceSlug = "dub",
   invalidDays = 14,
 }: {

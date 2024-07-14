@@ -4,7 +4,7 @@ import { expect } from "vitest";
 export const expectedLink: Partial<Link> & { tagId: string | null } = {
   id: expect.any(String),
   key: expect.any(String),
-  domain: "dub.sh",
+  domain: "ltdhunt.co",
   trackConversion: false,
   archived: false,
   expiresAt: null,

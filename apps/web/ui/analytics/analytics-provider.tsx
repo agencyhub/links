@@ -224,7 +224,7 @@ export default function AnalyticsProvider({
         baseApiPath, // baseApiPath for analytics API endpoints (e.g. /api/analytics)
         selectedTab, // selected tab (clicks, leads, sales)
         queryString,
-        domain: domain || undefined, // domain for the link (e.g. dub.sh, stey.me, etc.)
+        domain: domain || undefined, // domain for the link (e.g. ltdhunt.co, stey.me, etc.)
         key: key ? decodeURIComponent(key) : undefined, // link key (e.g. github, weathergpt, etc.)
         url: staticUrl, // url for the link (only for public stats pages)
         start, // start of time period

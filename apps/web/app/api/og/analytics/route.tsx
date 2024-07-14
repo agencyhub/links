@@ -16,7 +16,7 @@ export async function GET(req: NextRequest) {
     new URL("@/styles/Inter-Medium.ttf", import.meta.url),
   ).then((res) => res.arrayBuffer());
 
-  const domain = req.nextUrl.searchParams.get("domain") || "dub.sh";
+  const domain = req.nextUrl.searchParams.get("domain") || "ltdhunt.co";
   const key = req.nextUrl.searchParams.get("key") || "github";
 
   const link = await getLinkViaEdge(domain, key);
@@ -44,7 +44,7 @@ export async function GET(req: NextRequest) {
           <div tw="flex items-center">
             <img
               tw="rounded-full w-10 h-10"
-              src={`${GOOGLE_FAVICON_URL}${getApexDomain(link.url || "dub.co")}`}
+              src={`${GOOGLE_FAVICON_URL}${getApexDomain(link.url || "ltdhunt.com")}`}
               alt="favicon"
             />
             <h1 tw="text-4xl font-bold ml-4">
