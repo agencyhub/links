@@ -12,6 +12,14 @@
   "functions": {
     "app/api/cron/**/*.ts": {
       "maxDuration": 60
+    },
+    "app/api/ai/completion/route.ts": {
+      "maxDuration": 60,
+      "memory": 1024
+    },
+    "app/api/ai/anthropic.ts": {
+      "maxDuration": 60,
+      "memory": 1024
     }
   }
 }
