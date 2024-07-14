@@ -4,9 +4,7 @@ import { analyticsQuerySchema } from "@/lib/zod/schemas/analytics";
 import { DUB_WORKSPACE_ID } from "@dub/utils";
 import { NextResponse } from "next/server";
 
-export const config = {
-  runtime: 'nodejs', // ou 'edge' se for uma função Edge
-};
+export const runtime = 'nodejs'; // ou 'edge' se for uma função Edge
 
 // GET /api/analytics/demo
 export const GET = withSession(async ({ searchParams }) => {

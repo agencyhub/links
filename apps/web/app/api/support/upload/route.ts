@@ -3,9 +3,7 @@ import { plain, upsertPlainCustomer } from "@/lib/plain";
 import { AttachmentType } from "@team-plain/typescript-sdk";
 import { NextResponse } from "next/server";
 
-export const config = {
-  runtime: 'nodejs', // ou 'edge' se for uma função Edge
-};
+export const runtime = 'nodejs'; // ou 'edge' se for uma função Edge
 
 // POST /api/support/upload – get a signed URL to upload an attachment
 export const GET = withSession(async ({ searchParams, session }) => {
