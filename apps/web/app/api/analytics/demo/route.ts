@@ -7,8 +7,8 @@ import { NextResponse } from "next/server";
 export const runtime = 'nodejs'; // ou 'edge' se for uma função Edge
 
 // GET /api/analytics/demo
-export const GET = withSession(async ({ searchParams }) => {
-  const parsedParams = analyticsQuerySchema.parse(searchParams);
+export const GET = withSession(async (req) => {
+  const parsedParams = analyticsQuerySchema.parse(req.searchParams);
 
   const response = await getAnalytics({
     ...parsedParams,
